@@ -1,0 +1,35 @@
+<h1> Submitting a new Starter Kit </h1>
+<form method="POST" action="/user/submit/submitAction" name="submitStarterKit">
+    <label>Starter Kit Name: </label><input type="text" name="name">
+    <label>Github Repo Link</label><input type="text" name="link" value="https://github.com/">
+    <label>Environment</label><input type="text" name="environment">
+    <label>Sub Tool/s</label><input type="text" name="subTool" value="Was not specified">
+    <label>Setup Time</label><input type="text" name="setupTime">
+    <label>Description</label> <br/>
+    <textarea name="description"></textarea>
+    <p>
+        <label name="author"> Author: {{user.username}}</label>
+        <label id="date"></label>
+    </p>
+    <input type="hidden" name="h_author" value="{{user.username}}">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit" value="Submit Kit">
+</form>
+
+<script>
+(function() {
+    let currentDate = new Date();
+    let dd = currentDate.getDate();
+    let mm = currentDate.getMonth() + 1;
+
+    let yyyy = currentDate.getFullYear();
+    if (dd < 10) {
+        dd = '0'+dd;
+    }
+    if (mm < 10) {
+        mm='0'+mm;
+    }
+    let date = dd+'/'+mm+'/'+yyyy;
+    document.getElementById("date").innerHTML += 'Date: ' + date;
+})();
+</script>

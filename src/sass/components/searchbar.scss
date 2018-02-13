@@ -1,0 +1,16 @@
+
+.searchbar-div {
+    position: fixed;
+}
+
+.searchbar-div input { // used "!important" to overwrite Materialize's styling
+    background-color: rgba(204, 204, 179, 0.7) !important;
+    color: black !important;
+    font-size: 150%;
+}
+
+.searchbar-div input:focus {
+    font-size: 310%;
+    color: black !important;
+    background-color: rgba(204, 204, 179, 0.9) !important;
+}

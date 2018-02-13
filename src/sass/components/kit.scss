@@ -1,0 +1,52 @@
+.kit .container {
+    padding-left: 33%;
+    padding-right: 33%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+/*/// Categories \\\*/
+
+.matching-result {
+	color: green;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.kit-name * { // unsure why style isn't being applied here
+    font-size: 140%;
+    font-weight: bold;
+}
+.kit-author * {
+    font-size: 140%;
+    font-weight: bold;
+}
+.kit-environment * {
+    font-size: 130%;
+    font-weight: bold;
+}
+.kit-subTool * {
+    font-size: 120%;
+    font-weight: bold;
+}
+.kit-setupTime * {
+    font-size: 120%;
+    font-weight: bold;
+}
+.kit-description * {
+    font-size: 120%;
+    font-weight: bold;
+}
+.kit-popularity * { /* note: may have to be styled according to Github's standards */
+
+}
+.kit-lastUpdated * {
+    font-size: 120%;
+    font-weight: bold;
+}

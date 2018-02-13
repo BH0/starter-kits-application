@@ -1,0 +1,18 @@
+
+<div class="row">
+	<div class="col s12 m4 l3">
+		<div class="searchbar-div">
+				{{> top-level-nav }}
+				<input class="searchbar-input" type="text" id="searchbar" placeholder="Search for kit's">
+				<a href="#top" id="to-top"><i class="material-icons">arrow_upward</i></a>
+		</div>
+	</div>
+
+	<div class="col s12 m8 l9">
+		{{#if login}}
+			{{> isLoggedInView }}
+		{{else}}
+			{{> isNotLoggedInView }}
+		{{/if}}
+	</div>
+</div>

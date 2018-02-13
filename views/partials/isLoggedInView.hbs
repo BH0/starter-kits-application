@@ -1,0 +1,14 @@
+<!-- The Kits (diaplyed for when the user is logged in) -->
+
+<h1>Starter Kits: </h1>
+<ul id="kits">
+	{{# each kits }}
+			{{# each this}}
+				<li class="collection-item">
+					<div class=""
+						{{> kit-info }}
+						{{> kit-manipulators }}
+				</li>
+			{{/each}}
+		{{/each}}
+</uL>

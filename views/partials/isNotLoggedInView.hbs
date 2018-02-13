@@ -1,0 +1,11 @@
+<h1>Starter Kits: </h1>
+	<ul id="kits">
+		{{# each kits }}
+			{{# each this}}
+				<li class="collection-item">
+					{{> kit-info}}
+				</li>
+			{{/each}}
+		{{/each}}
+	<p style="color:red;"> Please log in for more actions</p>
+	</ul>

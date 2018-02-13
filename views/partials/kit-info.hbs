@@ -1,0 +1,20 @@
+<p class="kit-name"><i>Kit Name: </i><h3>{{this.name}}</h3></p>
+<p class="kit-author"><i>Kit Author: </i><h3>{{this.author}}</h3></p>
+<p class="kit-environment"><i>Environment: </i><h3>{{this.environment}}</h3></p>
+<p class="kit-subTool"><i>Sub tool/s: </i><h3>{{this.subTool}}</h3></p>
+<p class="kit-setupTime"><i>Setup Time: </i><h3>{{this.setupTime}}</h3></p>
+<ul class="collapsible" data-collapsible="accordion">
+
+    <li>
+    <div class="collapsible-header">More<i class="material-icons">arrow_drop_down</i></div>
+        <div class="collapsible-body"><span>
+            <p class="kit-description"><i>Kit Description: </i><h3>{{this.description}}</h3></p>
+            <p class="kit-popularity"><i>Popularity: </i><h3>to-do</h3></p> <!-- this may be pulled in from Github's API as the number of stars -->
+            <p class="kit-lastUpdated"><i>Last updated: </i><h3>{{this.date}}</h3></p>
+            </span>
+        </div>
+   </li>
+ </ul>
+
+
+ <!-- I decided to use classes instead of IDs as they were used for CSS-styling and I prefer to reserve IDs for JS -->
