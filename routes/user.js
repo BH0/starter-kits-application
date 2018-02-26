@@ -23,7 +23,7 @@ router.get('/submit', isLoggedIn, (req, res, next) => {
 
 router.post('/submit/submitAction', isLoggedIn, (req, res, next) => {
     let kitObj = {
-        author: req.body.h_author, // h_authr: hidden-input-field
+        author: req.body.h_author, // h_author: hidden-input-field
         name: req.body.name,
         link: req.body.link,
         environment: req.body.environment,
@@ -86,7 +86,7 @@ router.get('/removeKit/:id', isLoggedIn, (req, res, next) => {
                         res.send('Unable to remove this kit');
                         return err;
                     }
-                    res.riedect('/');
+                    res.redirect('/');
                 });
             } else {
                 res.send('You\'are unable to remove this kit');
