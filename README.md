@@ -1,4 +1,6 @@
-# Starter-Kits
+# Starter-Kits 
+The live version of the application doesn't work has an issue but this version works fine.  
+
 # Starter Kits Application
 
 ## About 
