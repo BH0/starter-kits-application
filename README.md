@@ -16,10 +16,11 @@ Designed and developed as a companion application for Github; don't worry about 
 * Handlebars 
 * Gulp 
 * Node + NPM 
+* MongoDB (Mongoose) 
 
 ## Try it out 
-(Assumes you have NodeJS installed). 
-```javascript
+(Assumes you have NodeJS installed & your own instance of MongoDB to connect to). 
+```javascript 
 git clone https://github.com/BH0/Starter-Kits.git 
 or download 
 
@@ -35,3 +36,4 @@ gulp / gulp watch
 View using browser via http://localhost:3000 
 
 ``` 
+
