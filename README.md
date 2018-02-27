@@ -1,5 +1,5 @@
 # Starter-Kits 
-The live version of the application doesn't work has an issue but this version works fine.  
+The live version of the application doesn't work due to an issue regarding its deployment but this version [locally] works fine.  
 
 # Starter Kits Application
 
