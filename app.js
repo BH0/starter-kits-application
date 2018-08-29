@@ -19,7 +19,7 @@ var userRoutes = require('./routes/user');
 var app = express();
 
 /// Coonect to Mongoose (MongoDB)
-mongoose.connect('localhost:27017/starterkits');
+mongoose.connect('mongodb://deployed:El3ph4nt@ds149138.mlab.com:49138/starterkits');
 require('./config/passport')(passport);
 
 /// view engine setup
